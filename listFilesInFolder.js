@@ -3,9 +3,11 @@ function listFilesInFolder() {
   var folder = DriveApp.getFolderById('YOUR_SHARED_DRIVE_ID');
   
   // Replace data on sheet
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
-  sheet.clear(); // Clear the current sheet
-  
+  // Create a new spreadsheet file with a specific name
+  var spreadsheetName = 'Member Library - List Files in Folders ' + Date();
+  var spreadsheet = SpreadsheetApp.create(spreadsheetName);
+  var sheet = spreadsheet.getActiveSheet();
+
   // Add headers to the sheet
   sheet.appendRow(["File Name", "File ID", "File Owner", "Last Modified Date", "URL", "File Size", "Parent Folder", "Date Created"]);
   

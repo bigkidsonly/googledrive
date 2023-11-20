@@ -2,7 +2,6 @@ function listFilesInFolder() {
   // Replace 'YOUR_SHARED_DRIVE_ID' with the ID of the shared Google Drive you want to access
   var folder = DriveApp.getFolderById('YOUR_SHARED_DRIVE_ID');
   
-  // Replace data on sheet
   // Create a new spreadsheet file with a specific name
   var spreadsheetName = 'Member Library - List Files in Folders ' + Date();
   var spreadsheet = SpreadsheetApp.create(spreadsheetName);

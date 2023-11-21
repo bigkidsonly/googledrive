@@ -3,7 +3,7 @@ function listFilesInFolder() {
   var folder = DriveApp.getFolderById('YOUR_SHARED_DRIVE_ID');
   
   // Create a new spreadsheet file with a specific name
-  var spreadsheetName = 'Member Library - List Files in Folders ' + Date();
+  var spreadsheetName = 'List Files in Folders ' + Date();
   var spreadsheet = SpreadsheetApp.create(spreadsheetName);
   var sheet = spreadsheet.getActiveSheet();
 

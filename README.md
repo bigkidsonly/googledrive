@@ -1,3 +1,6 @@
+This project contains various AppsScripts to help manage large multi-contributor Google Drive projects. Two scripts relate to general upkeep of the Google Drive, and one intakes documentation as a Google form and outputs a formatted Google Doc in the folder of choice.
+
+
 ## Google Drive cleanup Scripts
 
 A collection of Google Apps Script-based solutions to streamline the organization and cleanup of files within Google Drive. Scripts output helpful spreadsheets that can be transformed into file tree visualizations with Lucidchart's Org Chart template.
